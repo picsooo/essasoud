@@ -199,7 +199,7 @@ p { margin: 0 0 1em; }
 /* ------------------------------------------------------------
    Gallery grid
    ------------------------------------------------------------ */
-.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .gallery-grid figure { margin: 0; aspect-ratio: 1; border-radius: var(--r); overflow: hidden; background: var(--bg-alt); border: 1px solid var(--line); }
 .gallery-grid img { width: 100%; height: 100%; object-fit: cover; }
 .gallery-more { margin-top: 28px; text-align: center; }
@@ -445,11 +445,11 @@ p { margin: 0 0 1em; }
 .section-dark .agence-tel a { color: #fff; }
 .section-dark .agence .link { color: #8FB4E8; }
 
-.mosaic { display: grid; grid-template-columns: repeat(6, 1fr); grid-auto-rows: 180px; gap: 12px; }
+.mosaic { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 14px; }
 .mosaic figure { margin: 0; border-radius: var(--r); overflow: hidden; background: var(--bg-alt); border: 1px solid var(--line); }
 .mosaic img { width: 100%; height: 100%; object-fit: cover; }
 .mosaic .big { grid-column: span 2; grid-row: span 2; }
-@media (max-width: 900px) { .mosaic { grid-template-columns: repeat(3, 1fr); grid-auto-rows: 150px; } }
+@media (max-width: 900px) { .mosaic { grid-auto-rows: 180px; } }
 @media (max-width: 560px) { .mosaic { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 140px; } .mosaic .big { grid-column: span 2; } }
 
 .services-v2 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
